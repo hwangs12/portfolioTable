@@ -1,0 +1,164 @@
+body {
+    /* background-image: url('https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80'); */
+    /* background-image: url('https://unsplash.com/collections/1103088/one-color') */
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 400px;
+    justify-content: center;
+}
+
+
+
+.text-center {
+    margin-top: 1.5em;
+}
+
+
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer > nav {
+    align-items: flex-start;
+}
+
+div.container-fluid {
+    width: 137px;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
+
+h1 {
+    margin-top: 20px;
+    color: black;
+}
+
+.bi:active {
+    transform: rotate(180deg);
+}
+
+.navbar-toggler > span {
+    font-size: 1.3em;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link .active {
+    text-align: center;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li:nth-child(1) {
+    margin-top: 35px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: beige;
+}
+
+.dropdown-item {
+    text-align: center;
+}
+
+.nav-item > .nav-link {
+    color: black;
+}
+
+a.dropdown-item:hover {
+    background-color: rgb(132, 168, 235);
+}
+
+.navbar-toggler {
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: white;
+    color: black;
+}
+
+svg {
+    top: 100px;
+}
+
+.backgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.backgroundImage::before {
+    content: '';
+    background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80');
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.85;
+    background-size: cover;
+    background-position: right;
+    z-index: -5;
+}
+
+@media only screen and (max-width: 667px) {
+    body {
+        font-size: 1em;
+    }
+
+    .navbar-toggler > span {
+        font-size: 0.9em;
+    }
+
+    .nav-link {
+        font-size: 1em;
+    }
+
+    h1.text-center {
+        margin-top: 100px;
+    }
+
+    .navContainer {
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    nav.navbar {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+
+    .backgroundImage::before {
+        background-size: auto 100%;
+        background-position: bottom 170px left 540px;
+    }
+}
+
+
+
+
