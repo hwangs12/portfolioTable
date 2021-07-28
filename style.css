@@ -169,6 +169,10 @@ section {
     justify-content: center;
 }
 
+.displaynone {
+    display: none;
+}
+
 .container {
     width: 100%;
     margin-top: 50px;
