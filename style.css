@@ -1,14 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     /* background-image: url('https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80'); */
     /* background-image: url('https://unsplash.com/collections/1103088/one-color') */
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-weight: 100;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-right: 400px;
-    justify-content: center;
+    margin: 0;
+    width: 70%;
 }
 
 
@@ -29,7 +29,7 @@ body {
 }
 
 div.container-fluid {
-    width: 137px;
+    width: 150px;
     margin-top: 3em;
     margin-left: 1em;
     margin-right: 1em;
@@ -158,6 +158,118 @@ svg {
         background-position: bottom 170px left 540px;
     }
 }
+
+section {
+    width: 50%;
+    margin: auto;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contact-form {
+    height: 44%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px #000000;
+    margin:0 20%;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+}
+
+.form-group > button {
+    border: none;
+    background-color: #e1e1e1;
+    color: steelblue;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.form-group > button:hover {
+    background-color: #b1b1b1;
+}
+
+.form-group {
+    width: 90%;
+    margin-top: 0px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin: 0;
+} 
+
+@media only screen and (min-width: 1271px) {
+    #contact {
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1271px) {
+    #contact {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 567px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+#status {
+    margin-top: 15px;
+    padding: 0.3rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
 
 
 
