@@ -9,6 +9,7 @@ body {
     /* background-image: url('https://unsplash.com/collections/1103088/one-color') */
     margin: 0;
     width: 70%;
+    background-color: #bed3c3;
 }
 
 
@@ -33,6 +34,7 @@ div.container-fluid {
     margin-top: 3em;
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0;
 }
 
 
@@ -49,6 +51,10 @@ h1 {
 
 .navbar-toggler > span {
     font-size: 1.3em;
+}
+
+#about {
+    width: 200px;
 }
 
 .navbar-brand {
@@ -91,6 +97,7 @@ a.dropdown-item:hover {
 }
 
 .navbar-toggler {
+    padding: 0;
     color: black;
     transition: background-color 0.3s ease;
 }
@@ -120,7 +127,7 @@ svg {
     right: 0px;
     left: 0px;
     bottom: 0px;
-    opacity: 0.85;
+    opacity: 0.8;
     background-size: cover;
     background-position: right;
     z-index: -5;
@@ -159,8 +166,8 @@ svg {
     }
 }
 
-section {
-    width: 50%;
+section#contact {
+    width: 70%;
     margin: auto;
     background-color: none;
     display: flex;
@@ -169,13 +176,13 @@ section {
     justify-content: center;
 }
 
-.displaynone {
+section#contact.displaynone {
     display: none;
 }
 
 .container {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 11rem;
 }
 
 .contact-form {
@@ -273,8 +280,49 @@ section {
     }
 }
 
+#resume {
+    margin: 50px 70px;
+    padding: 5px;
+    width: 100%;
+    max-width: 1500px;
+    min-height: 1000px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+}
 
+#resume .left_side {
+    position: relative;
+    background: #C9D8B6;
+    padding: 40px;
+}
+#resume .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
 
+.profilePage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
 
+.profilePage > .imgBx > img {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.profilePage h4 {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
 
 
