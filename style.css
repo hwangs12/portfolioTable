@@ -16,6 +16,21 @@ body {
 
 .text-center {
     margin-top: 1.5em;
+    font-weight: 200;
+    animation: heading 2s linear 1;
+}
+
+@keyframes heading {
+    0% {
+        opacity: 0;
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 1.5em;
+    }
+    80% {
+        margin-top: 1.5em;
+    }
 }
 
 
@@ -23,6 +38,20 @@ body {
 .navContainer {
     display: flex;
     justify-content: center;
+    animation: bars 3s linear 1;
+}
+
+@keyframes bars {
+    0% {
+        opacity: 0;
+        margin-right: 800px;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .navContainer > nav {
@@ -33,8 +62,9 @@ div.container-fluid {
     width: 150px;
     margin-top: 3em;
     margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 1.5em;
     padding: 0;
+    border-bottom: 2px solid black; 
 }
 
 
@@ -49,8 +79,11 @@ h1 {
     transform: rotate(180deg);
 }
 
+
+
 .navbar-toggler > span {
     font-size: 1.3em;
+    font-weight: 300;
 }
 
 #about {
@@ -63,6 +96,10 @@ h1 {
 
 .navbar-light .navbar-nav .nav-link .active {
     text-align: center;
+}
+
+.navbar-nav > .nav-item:nth-child(1) {
+    margin-top: 35px;
 }
 
 li {
@@ -312,17 +349,153 @@ section#contact.displaynone {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.profilePage > .imgBx > img {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
+.profilePage > .imgBx {
+    width: 80%;
 }
 
-.profilePage h4 {
+.profilePage > .imgBx > img {
+    position: relative;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.profilePage h5 {
     font-weight: 500;
     text-align: center;
     margin-top: 10px;
+    font-size: 1.4em;
 }
+
+.profilePage h5 span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+h5.title {
+    margin: 1em 0;
+}
+
+li:nth-child(1) {
+    margin-top: 0;
+}
+
+.contactInfo > ul {
+    padding: 0;
+}
+
+.contactInfo > ul > li {
+    list-style: none;
+}
+
+.contactInfo.education {
+    margin-top: 50px;
+}
+
+.profilePage:hover {
+    color: rgb(255, 136, 0);
+}
+
+.contactInfo.contactPoint:hover {
+    color: rgb(255, 136, 0);
+}
+
+.contactInfo.education:hover {
+    color: rgb(255, 136, 0);
+}
+
+.contactInfo.social {
+    margin-top: 50px;
+}
+.contactInfo.social:hover {
+    color: rgb(255, 136, 0);
+}
+
+li > .linktext {
+    text-decoration: none;
+    color: black;
+}
+
+li > .linktext:hover {
+    color: rgb(255, 136, 0);
+}
+
+.contactInfo.language {
+    margin-top: 50px;
+}
+
+.contactInfo.language:hover {
+    color: rgb(255, 136, 0);
+}
+
+.about {
+    margin-bottom: 3em;
+}
+
+.about > .title {
+    color: rgb(16, 73, 16);
+    margin-bottom: 1em;
+}
+
+
+
+.about.programmingLanguage > ul > li {
+    padding: 5px 0;
+}
+.about.programmingLanguage > ul > li:first-child{
+    padding: 0 0 5px 0;
+}
+.about.programmingLanguage > ul > li:last-child{
+    padding: 5px 0 0 0;
+}
+
+.about.programmingLanguage > ul > li > .levellist {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.about.programmingLanguage > ul > li > .levellist > .level {
+    width: 100%;
+    background-color: #DAD0C2;
+    height: 10px;
+    margin: auto;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating {
+    background-color: #57837B;
+    height: 100%;
+}
+
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.html-rating {
+    width: 85%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.css-rating {
+    width: 75%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.js-rating {
+    width: 70%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.react-rating {
+    width: 60%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.node-rating {
+    width: 54%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.mongo-rating {
+    width: 70%;
+}
+.about.programmingLanguage > ul > li > .levellist > .level > .rating.sql-rating{
+    width: 64%;
+}
+
+.about.workExperience > ul > li:nth-child(1) {
+    list-style: none;
+}
+.about.workExperience > ul > li:nth-child(2) {
+    list-style: none;
+    text-align: right;
+}
+
+#resume.displaynone1 {
+    display: none;
+}
+
 
 
