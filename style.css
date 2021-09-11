@@ -10,6 +10,14 @@ body {
 	background-color: #bed3c3;
 }
 
+#transparent {
+	position: fixed;
+	top: 0;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+}
+
 .text-center {
 	margin-top: 1.5em;
 	font-weight: 200;
@@ -203,7 +211,7 @@ section#contact.displaynone {
 
 .container {
 	width: 100%;
-	margin-top: 11rem;
+	margin-top: 4rem;
 }
 
 .contact-form {
@@ -520,4 +528,28 @@ li > .linktext:hover {
 	80% {
 		opacity: 0;
 	}
+}
+
+.close-button {
+	position: absolute;
+	top: -1.2rem;
+	right: 0.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+	opacity: 0.6;
+	color: white;
+}
+
+.close-button:after {
+	display: inline-block;
+	content: "\00d7"; /* This will render the 'X' */
+}
+
+.close-button:hover {
+	color: rgb(231, 76, 76);
+	opacity: 1;
+}
+
+.displayOnClick {
+	display: none;
 }
